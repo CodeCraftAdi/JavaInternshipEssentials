@@ -1,0 +1,16 @@
+=> What is Git
+=> Git History
+	- who develop
+	- year
+	- other
+
+=> Git use
+=> Git advantages
+
+=> Git basic commands
+
+=> Working of Git
+
+=> Different between "master" and "main" branch
+
+=============================================================

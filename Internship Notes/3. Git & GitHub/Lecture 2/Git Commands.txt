@@ -1,0 +1,38 @@
+Git & GitHub - Version Control System (VCS)
+
+Git Commands:
+
+1. Connecting to a Remote Repository:
+   git remote add origin <RepositoryUrl>  
+   - Links the local repository to a remote GitHub repository.
+   - Allows pushing and pulling changes from the remote.
+
+2. Renaming the Default Branch:
+   git branch -M main  
+   - Renames the current branch to "main".
+   - Ensures compatibility with modern Git conventions.
+
+3. Pushing Local Changes to Remote:
+   git push -u origin main  
+   - Pushes the local "main" branch to the remote repository.
+   - The "-u" flag sets the upstream branch for future pushes/pulls.
+
+4. Cloning a Repository:
+   git clone <RepositoryUrl>  
+   - Downloads a copy of a remote repository to the local system.
+   - Preserves the full commit history.
+
+5. Pulling Latest Changes from Remote:
+   git pull  
+   - Fetches and merges the latest changes from the remote repository.
+   - Keeps the local repository up-to-date.
+
+6. Fetching Remote Updates Without Merging:
+   git fetch  
+   - Retrieves the latest changes from the remote but does not merge them.
+   - Allows reviewing updates before merging.
+
+7. Comparing Local & Remote Branches:
+   git diff HEAD origin/main  
+   - Shows differences between the local "HEAD" and the remote "main" branch.
+   - Useful to check what changes exist in the remote before pulling.

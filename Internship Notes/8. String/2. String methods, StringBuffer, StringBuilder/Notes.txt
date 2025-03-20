@@ -1,0 +1,61 @@
+=> String class constructors :-
+
+=> String class methods :-
+	1. Validating User Input :-
+		= length()
+		= isEmpty()
+		= trim()
+
+	2. Comparing 2 strings :-
+		= equals()
+		= equalsIgnoreCase()
+		= compareTo()
+		= compareToIgnoreCase()
+
+	3. Contatination of 2 strings :-
+		= + operator
+		= concat()
+
+	4. Get sub-string from String :-
+		= subString()
+		= subSequence()
+
+	5. Replacing or removing characters :-
+		= replace()
+		= replaceFirst()
+		= replaceLast()
+	
+	6. Searching characters in String :-
+		= indexOf()
+		= lastIndexOf()
+		= contains()
+		= charAt()
+		= endsWith()
+		= startsWith()
+
+	7. Case conversion methods :-
+		= toLowerCase()
+		= toUpperCase()
+
+	8. Type conversion methods :-
+		= valueOf()
+		= toCharArray()
+
+	9. Other methods :-
+		= split()
+
+=====================================
+
+=> What is difference between == and .equals() method :-
+	-> == operator is used for reference comparison or address comparison
+	   .equals() method is used for content comparison
+
+====================================
+
+=> StringBuffer & StringBuilder :-
+	-> String created using String class will always be Immutable
+	   But String created using StringBuffer and StringBuilder will always be Mutable
+
+	-> StringBuffer methods are synchronized but StringBuilder methods are non-synchronized
+
+====================================

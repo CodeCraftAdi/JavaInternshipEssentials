@@ -1,0 +1,23 @@
+=> AWT & Swing :-
+	-> Not used in industry
+	-> Not even single question will be asked in interview
+
+	-> It is the Simplest GUI Part in Java (but Java GUI library is not used in industry)
+	-> Basic OOPs concept (implementation), Frontend part, 1-2 days invest
+
+	-> Logics / Implementation / Design Patterns -> Industry level
+
+=============================================================================================================
+
+=> AWT :-
+	-> Abstract Window Toolkit
+	-> It is first GUI part in java but it was having many drawbacks
+	-> Package : java.awt.ClassName;
+
+=> Swing :-
+	-> Swing is advanced part of AWT which removes all the drawbacks of AWT
+	-> Swing inherits AWT
+	-> Package : javax.swing.ClassName;
+	-> All the classes of swing starts with 'J'
+
+==============================================================================================================

@@ -1,0 +1,64 @@
+1. Deposit
+2. Withdraw
+3. Balance
+4. Exit
+-------------------
+1
+Enter the amount you want to deposit : 5000
+Amount deposited successfully
+--------------
+1. Deposit
+2. Withdraw
+3. Balance
+4. Exit
+-------------------
+2
+Enter the amount you want to withdraw : 20000
+Amount withdraw successfully
+--------------
+1. Deposit
+2. Withdraw
+3. Balance
+4. Exit
+-------------------
+3
+Your total balance is : 85000rs
+--------------
+1. Deposit
+2. Withdraw
+3. Balance
+4. Exit
+-------------------
+2
+Enter the amount you want to withdraw : 500000
+Sorry, insufficient funds
+Enter the amount you want to withdraw : 200000
+Sorry, insufficient funds
+Enter the amount you want to withdraw : 200
+Amount withdraw successfully
+--------------
+1. Deposit
+2. Withdraw
+3. Balance
+4. Exit
+-------------------
+4
+==============================================================================
+1. Open New Account
+2. Deposit
+3. Withdraw
+4. Balance
+5. Exit
+-------------------
+1
+Enter Account Holder Name : Deepak
+Enter Account Number : 1111
+Enter Deposit Amount : 10000
+Account opened successfully
+-------------------
+1. Open New Account
+2. Deposit
+3. Withdraw
+4. Balance
+5. Exit
+-------------------

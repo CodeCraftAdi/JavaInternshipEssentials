@@ -1,0 +1,40 @@
+=> Encapsulation :-
+	-> It is the process by which variables and methods are wrapped or binded into a single unit
+	-> It is the technique of hiding the data from other classes and this data can be accessed by public getter and setter methods
+	-> Real world example : capsule etc
+	-> Techniqually every class in java is an example of encapsulation BUT main example of encspauslation is "JavaBean" class
+	-> Encapsulation is achieved by declaring variables as private and public getter and setter methods
+	-> For example :-
+		public class Employee
+		{
+    			private int empId;
+
+    			public int getEmpId()
+    			{
+        			return empId;
+    			}
+
+    			public void setEmpId(int empId)
+    			{
+        			this.empId = empId;
+    			}
+		}
+
+-------------------------------------------------------------
+
+=> JavaBean class :-
+	-> Rules for JavaBean class:
+		1. Must implement Serializable interface
+		2. Class must have public no-argument constructor
+		3. Class must have all private variables
+		4. Class must contain public getter and setter methods
+	
+=> What is tightly encapsulated class :-
+	-> A class is tightly encapsulated class if and only if all the variables are private
+
+=============================================================================================================
+
+1. What is difference between Abstraction & Encapsulation :-
+	-> 
+
+=============================================================================================================

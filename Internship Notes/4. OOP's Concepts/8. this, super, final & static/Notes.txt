@@ -1,0 +1,79 @@
+=> this Keyword :-
+	-> this keyword is "reference variable" that refers to the current object
+	-> Diagram
+	-> Use of this keyword :-
+		1. this keyword is used to refer the current class instance variable
+		2. this keyword is used to invole the current class method
+		3. this keyword is used to invoke the current class constructor
+		4. this keyword can be used to pass as an argument in the method
+		5. this Keyword can be used to pass as an argument in the constructor
+		6. this keyword can be used to return the current class instance
+
+---------------
+
+=> What is constructor chaining ?
+
+=====================================================================================================
+
+=> super Keyword :-
+	-> super keyword is "reference variable" which refers to the parent class object
+	-> Use of super keyword :-
+		1. super keyword can be used to refer the immediate parent class instance variable
+		2. super keyword is used to invoke parent class method
+		3. super keyword is used to invoke parent class constructor
+
+=====================================================================================================
+
+=> final Keyword :-
+	-> final keyword is used to provide restrictions to the users
+	-> final keyword can be used with :-
+		1. variables (finals variables values cannot be changed or re-assigned)
+		2. methods (final methods cannot be overrided)
+		3. class (final class cannot be inherited)
+
+=====================================================================================================
+
+=> static Keyword :-
+	-> static keyword is non-access modifier
+	-> static keyword can be used with :-
+		= variables
+		= methods
+		= blocks
+		= nested or inner class (not outer class)
+	-> use of static keyword :-
+		1. It is used to improve the shareability
+		2. it is used for memory management
+	-> NOTE : static members belong to the class, not objects
+
+===================================================================================================
+
+=> Access Modifiers :-
+	public, private, protected, default
+
+=> Non-Access Modifiers :-
+	abstract, final, static, synchronized, transient etc
+
+===================================================================================================
+
+=> static Variables :-
+	-> If we declare any variable as static, it is known as static variable
+	-> Static Variables gets the memory allocation in method area at the time of class loading
+
+==================================================================================================
+
+=> static methods :-
+	-> If we declare any method as static, it is known as static methods
+
+==================================================================================================
+
+=> static blocks :-
+	1. static blocks are always exeucted from top to bottom
+	2. static blocks are called directly, but main method should be present.
+	3. It is used when we need to load any driver in memory before the execution of the program.
+
+==================================================================================================
+
+=> static Inner Class :-
+	-> We cannot create outer class as static, we always create nested or inner class as static
+
+==================================================================================================

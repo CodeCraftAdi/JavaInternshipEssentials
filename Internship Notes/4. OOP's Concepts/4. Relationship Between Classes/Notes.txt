@@ -1,0 +1,71 @@
+=> Relationship Between Classes :-
+	-> There are 3 types of relationship between classes :-
+		1. IS-A Relationship (Inheritance)
+		2. HAS-A Relationship (Association)
+		3. USES-A Relationship (Dependence)
+
+==========================================================================================
+
+=> IS-A Relationship :-
+	-> IS-A Relationship is also known as Inheritance
+	-> IS-A relationship is one in which data members of one class is obtained into anther class through the concepts of inheritance
+	-> Types of IS-A Relationship :-
+		1. Single Inheritance
+		2. Multilevel Inheritance
+		3. Hierarchical Inheritance
+		4. Multiple Inheritance
+		5. Hybrid Inheritance
+	-> How to achieve inheritance in Java :-
+		= using extends (or implements) keyword
+	-> What is parent class and child class :-
+		= Parent class is the super class of sub class
+		= Parent class properties are inherited into another class
+		= Child class is the sub class
+		= Child class inherits the properties of parent class
+	-> Advantage of Inheritance
+		= Code reusability
+	-> Disadvantage of Inheritance
+		= Tight coupling
+
+=============================================================================================================
+
+=> HAS-A Relationship :-
+	-> HAS-A Relationship is also known as Association
+	-> HAS-A Relationship is onw in which an object of one class is created as a data member into another class
+	-> Forms of HAS-A Relationship :-
+		1. Aggregation
+		2. Composition
+
+-----------------------------------------
+
+	-> Association :-
+		= It is relation between 2 separates classes which establishes through their objects
+		= Types of Association :-
+			1. One-to-One Association
+			2. One-to-Many Association
+			3. Many-to-One Association
+			4. Many-to-Many Association
+		= Forms of Association :-
+			1. Aggregation
+			2. Composition
+
+	-> Aggregation :-
+		= Week Bonding
+
+	-> Composition
+		= Strong Bonding
+		
+
+==============================================================================================================
+
+=> USES-A Relationship :-
+	-> USES-A Relationship is also known as dependence
+	-> USES-A Relationship is one in which a method of one class is using an object of another class
+
+==============================================================================================================
+
+=> TASK :-
+	= Try all inheritance programs
+	= RnD that which properties cannot be inhertied from one class to another
+
+==============================================================================================================

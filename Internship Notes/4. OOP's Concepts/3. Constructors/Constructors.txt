@@ -1,0 +1,28 @@
+=> Constructors :-
+	-> Constructors are the special methods which :-
+		= has the same name as that of class name
+		= does not have any return type
+	-> Syntax :-
+		class Test
+		{
+			access-modifier Test()
+			{
+				//body
+			}
+		}
+	-> Use of constructor :-
+		= Constructors are used to initialize the objects
+	-> When constructor is executed :-
+		= When the object is created
+	-> How constructors are executed :-
+		= Executed automatically when the objects are created
+	-> Types of constructors :-
+		1. Default Constructor
+			= It is created by compiler
+			= But it is only created when programmer doesnt create any constructor
+		2. 0-Argument Constructor
+			= It is created by programmer which does not have any parameter
+		3. Parameterized Constructor
+			= It is created by programmer which has parameters
+
+==================================================================================================================

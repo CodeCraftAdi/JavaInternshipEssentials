@@ -1,0 +1,113 @@
+=> Multitasking :-
+	-> Performing multiple tasks at single time
+	-> Example :- When we perofmr multiple tasks i.e. writing in notepad and teaching on zoom
+	-> Multitasking use the concept of "context switching" internally
+	-> Multitasking can be achieved by 2 ways :-
+		1. Multiprocessing (Process based multitasking)
+		2. Multithreading (Thread based multitasking)
+
+=> Multiprocessing :-
+	-> Multiprocessing is the part when one system is connected with miltiple processor (CPU)
+	-> Multiprocessing is best suitable at system level or OS level
+
+------------------------------------------
+
+=> Multithreading :-
+	-> Multithreading is the part when multiple threads (sub-process) are executed at single time.
+	-> For example :-
+		= VLC player - playing video, playing audio, progress bar, time etc
+
+=====================================================================================================
+
+=> Difference between Process & Thread :-
+	-> Process is the combination of multiple sub-process (thread)
+	   Thread is the smallest process (sub-process)
+
+	-> Process can be divided into small tasks
+	   Thread cannot be divided into sub-task
+
+	-> Process have different memory address
+	   Thread has same memory address
+
+	-> Process is heavy-weight
+	   Thread is light-weight
+
+	-> It difficult to switch from one process to another
+	   It easy to switch from one thread to another
+
+=====================================================================================================
+
+=> How to create thread ?
+	1. by extending Thread class
+	2. by implementing Runnable interface
+
+------------------------------------------------------
+
+=> By extending Thread class :-
+	1. Create one class and extends it with "Thread" class
+	2. Override the run() method
+	3. Create an instance of thread class
+	4. start the thread
+
+-------------------------------------------------------
+
+=> What is the use of start() method :-
+	1. It will register the thread with "thread schedular"
+	2. It will execute all the mendatory functionalities related to the thread
+	3. It will invoke the run() method
+
+start()
+{
+	// register the thread with "thread schedular"
+	// execute all the mendatory functionalities related to the thread
+	// run()
+}
+
+--------------------------------------------------------
+
+=> By implementing Runnable interface
+	1. Create one class and implements it with "Runnable" interface
+	2. Override the run() method
+	3. Create an instance of Runnable interface
+	4. Create an instance of Thread class
+	5. Provide runnable instance to thread constructor
+	6. start the thread
+
+---------------------------------------------------------
+
+=> Which is better way to create thread, using Thread class or Runnable interface ?
+	-> Runnable interface because in case of extending Thread class, we will not be able to inherit any other class but in case of Runnable interface we are able to inherit other interfaces also.
+
+---------------------------------------------------------
+
+=> Relationship between Runnable interface and Thread class
+
+interface Runnable
+{
+	public void run();
+}
+class Thread implements Runnable
+{
+	public void start()
+	{
+		//--------
+		//run()
+
+		//other methods
+	}
+}
+
+===========================================================================================================
+
+=> Other small concepts :-
+	1. Internally JVM creates one thread by default i.e. "main" thread
+		= We can even change the "main" thread name which is created by JVM
+	2. If we create any thread in main method, then that thread will be created by main thread
+	3. Whenever new thread is created, anme will be provided as thread-0, thread-1, thread-2....
+
+===========================================================================================================
+
+=> Thread Life Cycle :-
+	-> Diagram
+
+===========================================================================================================

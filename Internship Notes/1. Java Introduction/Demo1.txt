@@ -1,0 +1,21 @@
+class Test
+{
+	int rollno = 101;	//instance variables
+	
+	static String name = "deepak";	//static variable
+
+	void m1()
+	{
+		int no = 10;	//local variable
+		m2();
+	}
+	void m2()
+	{
+		//-------
+	}
+	public static void main(String[] args)
+	{
+		Test obj = new Test();
+		obj.m1();
+	}
+}

@@ -1,0 +1,38 @@
+=> String :-
+	-> String is the group / collection / sequence of characters, for example :-
+		String name = "deepak";
+	-> String is an array of characters, for example :-
+		char[] c = {'d','e','e','p','a','k'};
+
+	-> To create String, java has provided some classes i.e.
+		= java.lang.String
+		= java.lang.StringBuffer
+		= java.lang.StringBuilder
+		= java.util.StringTokenizer
+
+	-> String is non-primitive data type
+
+	-> String is a pre-defined class which is present in "java.lang" package
+	-> Syntax :-
+		public final class String extends Object implements Serializable, Comparable, CharSequence
+		{
+			//Constructors
+
+			//Methods
+		}
+
+	-> String is the class and we can create String class object. But we can create String object by 2 ways :-
+		1. String str = new String("deepak");
+		2. String str = "deepak";
+
+	-> Whenever we create String class object, object created is always "IMMUTABLE" (which cannot be changed)
+
+	-> String objects allocates the memory in "String Constant Pool (SCP)" or "String Literal Pool (SLP)", which is present in Heap Area.
+	
+	-> Garbage collection is not application for String Constant Pool
+
+-------------------------------
+
+=> Difference between creating String using new and without new keyword
+
+=======================================================================================================

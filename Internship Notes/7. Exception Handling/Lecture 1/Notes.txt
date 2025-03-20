@@ -1,0 +1,178 @@
+=> Difference between Error & Exception :-
+	-> Error :-
+		= It is the problem which does not allow is to compile and execute program
+		= It is occured due to the lack of "Java concepts" or "lack of system resourses"
+		= Types of Errors :-
+			1. Compile time error
+				- Syntax error (; , { - }, method call is not proper etc)
+				- Semantic error (a = 10, String name "Deepak" etc)
+				- Lexical error (pubilc, sttatic etc)
+			2. Runtime error
+				- JVM error which is provided at runtime (Stackoverflow error)
+	-> Exception :-
+		= It is the problem which is occured at runtime or execution time
+		= It is occured due to our program
+		= Types of Exceptions :-
+			1. Compile time exception (Checked Exception)
+			2. Runtime exception (Unchecked Exception)
+
+==========================================================================================================
+
+=> Exception :-
+	-> It is the problem which disturbs the normal flow of program
+	
+
+=> Compile time exception (Checked Exception) :-
+	-> It is the exception which can be checked by the compiler
+	-> If checked exception is not reported then our program will not compile
+	-> Example :-
+		= IOException, ClassNotFoundException, SQLException etc
+
+=> Runtime exception (Unchecked Exception) :-
+	-> It is the exception which cannot be checked by compiler
+	-> Its not compulsory to report unchecked exception
+	-> Example :-
+		= ArithmeticException, NullPointerException etc
+
+=> NOTE : Exceptions are always occured at runtime
+
+=> Hierarchy of Exception :-
+	= Diagram
+
+=> Working of Exception :-
+	= Program & diagram
+
+==========================================================================================================
+
+=> Exception Handling :-
+	-> For exception handling or reporting, Java has provided 5 keywords i.e.
+		= try     = catch     = finally     = throw     = throws
+
+=> NOTE : Only "catch block" handles the exception, not others.
+
+==========================================================================================================
+
+=> throws Keyword :-
+	-> It is used to inform the caller method that this method can provide/report an exception object
+		----OR----
+	-> It is used to bypass the generated exception from present method to caller method
+	-> Syntax :-
+		throws ExceptionClassName, ExceptionClassName...
+
+---------------------------------------
+
+=> throw Keyword :-
+	-> It is used to create an exception object programatically
+	-> By default exception object is created automatically by methods but if programmer wants to create exception object manually then programmer can use "throw" keyword
+	-> Syntax :
+		= throw new ExceptionClassName();
+
+==========================================================================================================
+
+=> Difference between throw and throws :-
+	1. throw keyword is used to create exception object programtically
+	   throws keyword is used to inform the caller method that this method can provide exception object
+	
+	2. throw keyword is used in the method body
+	   throws keyword is used with method signature
+
+	3. Example :
+		void m1() throws ExceptionClassName, ExceptionClassName...
+		{
+			throw new ExceptionClassName();
+		}
+
+	4. throw keyword is able to allow only one exception class name at one time
+	   throws keyword is able to allow more than one exception class name at one time
+
+	5. throw keyword is mainly used for unchecked exception
+	   throws keyword is mainly used for checked exception
+
+	6. throw keyword is mainly for for user-defined exceptions
+	   throws keyword is mainly used for pre-defined exceptions
+
+	7. throw keyword is followed by an instance
+	   throws keyword is followed by class
+
+===========================================================================================================
+
+=> try block :-
+	-> try block is used to provide the risky code i.e. code in which there is chance for exception
+	-> Syntax :-
+		try
+		{
+			//risky code
+		}
+
+=> catch block :-
+	-> catch block is used to provide the maintenance code or alternative code or handling code
+	-> Syntax :-
+		catch(ExceptionClassName ref)
+		{
+			//handling code
+		}
+
+----------------------------
+
+=> try-catch block :-
+	-> try-catch block is used in combination in which we provide the risky code in try block and handling code in catch block
+	-> Syntax :-
+		try
+		{
+			//risky code
+		}
+		catch(ExceptionClassName ref)
+		{
+			//handling code
+		}
+	-> catch block will be executed only when there is exception in try block. If there is not exception in try block then catch block will not be executed
+	-> We can provide multiple catch blocks with one try block
+
+---------------------------
+
+=> finally block :-
+	-> finally block is always executed whether there is exception or not
+	-> finally block is used to provide the resource closing code
+	-> Syntax :-
+		try
+		{
+			//risky code
+		}
+		catch(ExceptionClassName ref)
+		{
+			//handling code
+		}
+		finally
+		{
+			//resource closing code
+		}
+
+		--------------
+
+		try
+		{
+			//risky code
+		}
+		finally
+		{
+			//resource closing code
+		}
+
+=============================================================================================================
+
+=> try-with-resource
+	-> We provide the resource in try block and try block will take care of closing the resource
+	-> Syntax :-
+		try(Resource closing code)
+		{
+
+		}
+
+=============================================================================================================
+
+=> How to print exception object ?
+	= System.out.println(e.getMessage()); - message
+	= System.out.println(e); - ExceptionClassName and message
+	= e.printStackTrace(); - ExceptionClassName, message and location
+
+=============================================================================================================

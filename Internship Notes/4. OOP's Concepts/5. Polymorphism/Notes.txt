@@ -1,0 +1,78 @@
+=> Polymorphism :-
+	-> Poly means many and morphism means forms, so polymorphism means having multiple forms
+	-> Real World example : water (soild, liq, gas), shapes (rec, triangle etc), sound (humans, animal etc)
+	-> Types of polymorphism :-
+		1. Compile Time Polymorphism
+		2. Runtime Polymorphism
+	-> Advantage :-
+		= It provides flexibility to develop an application i.e. it allows us to perform a single task by different ways
+
+------------------------------------------------------
+
+=> Compile Time Polymorphism :-
+	-> It is also known as static polymorphism or early binding
+	-> This polymorphism is achieved at compile time.
+	-> How to achieve :-
+		1. Method Overloading
+		2. Operator Overloading (only + operator is overloaded)
+
+---------
+
+=> Method Overloading :-
+	-> The process of compiler trying to resolve the method call based on reference type is known as method overloading
+	-> Rules of method overloading :-
+		1. Same name
+		2. Within same class
+		3. Different parameters
+			= Number of parameter
+			= Type of parameter
+			= Sequence of parameter
+	
+--------------------------------------------------------
+
+=> Does java support operator overloading
+	-> Yes, but only for + operator
+
+=> Can we overload main() method ?
+	-> Yes
+
+=> Can we overload the constructor ?
+	-> Yes
+
+=> If we have different return type of methods but same parameters, then it is method overloading or not ?
+	-> No
+
+--------------------------------------------------------
+
+=> Runtime Polymorphism :-
+	-> It is also known as Dynamic Polymorphism or Late Binding
+	-> If the polymorphism is existed at runtime then it is known as polymorphism
+	-> How to achieve :-
+		= Method Overriding
+
+=> Method Overriding :-
+	-> Method Overriding is the feature by which child class trying to change the implementation of parent class method
+	-> Rules of method overriding :-
+		1. Same name
+		2. Within different class
+		3. Same parameters
+			= Number of parameter
+			= Type of parameter
+			= Sequence of parameter
+		4. IS-A relationship (Inheritance)
+
+-------------
+
+=> Can we overriding the main() method
+
+=> Can we override the constructor ?
+	-> No
+
+=> If we have different return type of methods, then it is method overriding or not ?
+	-> No
+
+--------------------------------------------------------
+
+=> Upcasting and Downcasting :-
+	
+--------------------------------------------------------

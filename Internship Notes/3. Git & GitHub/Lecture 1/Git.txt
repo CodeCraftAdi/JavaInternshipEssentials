@@ -1,0 +1,19 @@
+=> Git & GitHub :-
+	-> These are known as VCS (Version Control System)
+	-> Git Commands
+
+git init
+
+git status
+
+git add .
+
+git commit -m "message"
+
+--------
+
+git log
+
+git log --oneline
+
+git diff  ----    -----

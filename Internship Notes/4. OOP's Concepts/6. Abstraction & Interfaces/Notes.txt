@@ -1,0 +1,119 @@
+=> Java Basic Structure
+	- Classes
+	- Methods
+	- Objects
+
+=> Initialize the objects
+	- Constructors
+
+=> Code Reusability
+	- Relationship Between Classes (Inheritance)
+
+=> Security
+	- Abstraction
+	- Encapsulation
+	- Tightly Encapsulated Classes
+
+=> Improves Sharability
+	- static
+
+=> Modularity
+	- Packages
+
+=====================================================================================
+
+=> Data Hiding :-
+	-> It is the process of hiding the data from outside users
+	-> It is achieved by private access modifier
+	-> For Example :-
+		class Account
+		{
+			private int balance;	// data hiding
+			
+			//----other code----
+		}
+	-> To access or modify private variables, java provides some special methods i.e. getter and setter methods
+	-> It is highly recommended to declare variables (data members) as private
+
+=====================================================================================
+
+=> Abstraction :-
+	-> Abstraction is hiding the details (hiding the implementation) and just highlight the main services
+	-> Real World Examples :-
+		= ATM, Car breaks
+	-> How to achieve abstraction ?
+		= By abstract class
+		= By interfaces
+
+----------------
+
+=> Abstract Class :-
+	-> Abstract class are those which can contain both concrete and abstract methods
+	-> Example :-
+		abstract class Test
+		{
+			void m1()		//concrete method
+			{
+				//body
+			}
+
+			abstract void m2();	//abstraxct method
+		}
+	-> We have to use abstract keyword for abstract class
+
+=> Abstract Methods :-
+	-> Abstract methods are those which does not have any implementation -----OR-----
+	-> Abstract methods are those which have only decalation part, not implementation
+	-> Syntax :-
+		abstract return-type methodName(list of parameters);
+	-> We have to use abstract keyword for abstract methods
+
+--------------------
+
+=> Points to remeber :-
+	1. Concrete class cannot contain abstract methods
+	2. Its not compulsory to have abstract methods in abstract class
+	3. We cannot instantiate the abstract class
+	4. We can create reference variable of abstract class
+	5. If we inherit the abstract class, then its compulsory to provide all the implementations of abstract methods
+	6. If we inherit the abstract class, then its compulsory to override all the abstract methods
+	7. We can create constructors in abstract class.
+		= Abstract class constructor is called automatically when we create an instance of child class (compiler automatically provides super() keyword in the constructor to call abstract class constructor)
+	8. Abstract class can inherit any other class
+	9. We can overload the abstract methods
+
+	10. Difference between concrete methods and abstract methods
+	11. Difference between concrete class and abstract class
+
+============================================================================================================
+
+=> Interfaces :-
+	-> Interfaces are similar to abstract classes but having all the methods of abstract type
+	-> Syntax :-
+		interface I1
+		{
+			// public static final variables
+			// public abstract methods
+		}
+	-> Use of Interfaces :-
+		= Interfaces are used to achieve 100% abstraction
+		= Interfaces are used to achieve multiple inheritance in java
+		= Interfaces are used to achieve loose coupling
+
+	-> Interface new features :-
+		= JDK 8 :-
+			- We can create default methods in an interface in which there is implementation part
+			- We can create static methods in an interface in which there is implementation part
+		= JDK 9 :-
+			- We can create private static methods in an interface
+
+	-> What are marker interfaces ?
+		= Any interface which does not have any abstract method or any variable is known as marker interface
+		= It is used to provide some extra features or abilities to the object at runtime
+		= For examples :-
+			- Cloneable interface
+			- Serializable interface
+			- Remote interface
+			  etc
+
+===========================================================================================================================

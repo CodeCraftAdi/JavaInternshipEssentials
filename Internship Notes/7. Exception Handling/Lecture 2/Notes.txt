@@ -1,0 +1,12 @@
+=> How to create User Defined Exception :-
+	1. Create a user defined exception class and inherit Exception or RuntimeException class
+		= (recommended is to use RuntimeException class)
+	2. Create a parametrized constructor
+	3. "throw" the exception and handle it
+
+=> Note :-
+	-> If we are creating API then we should inherit Exception class, otherwise we should inherit RuntimeException class
+
+
+========================================================================================================
+

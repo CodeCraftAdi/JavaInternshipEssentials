@@ -1,0 +1,50 @@
+=> Java Introduction
+=> Java Programming Terminologies
+=> IDE Download & Installation
+
+=> Control Statements
+	-> Which control the flow of program
+	-> Types of Control Statements :-
+		1. Conditional or Decision Making Statements
+			= if, if-else, if-else if, nested if, switch
+		2. Iteration or Looping Statements
+			= for, while, do-while, for-each
+		3. Jump or Branching Statements
+			= break, continue, return
+
+---------------------------
+
+for(initialization; condition; increment/decrement)
+{
+	//statements
+}
+
+-----------
+
+for(initialization; condition; increment/decrement)
+{
+	for(initialization; condition; increment/decrement)
+	{
+		//statements
+	}
+}
+
+-----------
+
+while(condition)
+{
+	//statements
+}
+
+------------
+
+=> If we dont know the number of iterations then we should use while loop and if we have fixed number of iterations then we should use for loop
+
+------------
+
+do
+{
+	//statements
+}while(condition);
+
+-----------------------------------------------

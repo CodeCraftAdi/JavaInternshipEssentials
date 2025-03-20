@@ -1,0 +1,92 @@
+=> OOP's Concepts :-
+
+	-> What is OOP ?
+		= Object Oriented Programming
+		= OOP is programming paradiagm (programming style)
+		= OOP is the modern programming paradiagm
+	-> Features of OOP :-
+		= Classes, Methods & Objects
+		= Inheritance
+		= Polymorphism
+		= Encapsulation
+		= Abstraction
+
+============================================================================
+
+=> Classes :-
+	-> Class is blueprint or prototype
+	-> Class is used to create Objects
+	-> Syntax :-
+		access-modifiers class ClassName
+		{
+			// variables
+			// methods
+			// constructors
+			// blocks
+			// nested classes
+		}
+	-> Example :-
+		public class Calculator
+		{
+			//body
+		}
+
+=> Methods :-
+	-> Methods are the block of code
+	-> Methods are used to perform any task
+	-> Advantages :-
+		= Code Reusability
+		= Code Optimization
+	-> Syntax :-
+		access- modifiers return-type methodName(list of parameters)
+		{
+			//body
+		}
+	-> Examples :-
+		public void sum(int no1, int no2)
+		{
+			//body
+		}
+
+=> Objects :-
+	-> Object is an instance of class
+	-> Object is real world entity or physical entity which occupies the space
+	-> Objects is simple a memory block
+	-> Objects characteristics :-
+		= State (represents the data/value)
+		= Behaviour (represents the functionality)
+		= Identity (represents the unique id which is provided by JVM automatically)
+	-> Syntax :-
+		= Object Creation
+			ClassName object_name = new ClassName();
+		= Calling
+			object_name.variable_name;
+			object_name.methodName();
+	-> Example :-
+		= Calculator cal = new Calculator();
+		= cal.no1;
+		= cal.sum();
+		= cal.sum(10, 20);
+
+========================================================================================================
+
+=> Real World Example of Classes, Methods & Objects :-
+	= Class : Humans
+	= Methods : eat(), sleep(), walk() etc
+	= Objects : deepak, ravi, priya etc
+
+========================================================================================================
+
+=> Task :-
+	= Create one calculator which will perform multiple task i.e. addition, subtraction, multiplication & division
+	= In case of division number should be greater then zero
+	= You have to take the 2 values from user
+
+	= There should be choice i.e.
+		1 - Addition
+		2 - Subtraction
+		3 - Multiplication
+		4 - Division
+		5 - Exit
+
+========================================================================================================

@@ -1,0 +1,17 @@
+Chapter 1:-
+	1. Java Introduction
+	2. Java Software Install
+	3. JDK, JRE & JVM Architecture
+	4. Java Program Compilation & Execution
+	5. Case Studies
+	6. JVM Deep Architecture
+
+Chpater 2 :-
+	1. Data Types
+	2. Variables
+	3. Literals
+	4. operators
+	5. Keywords
+	6. Identifiers
+
+GIT

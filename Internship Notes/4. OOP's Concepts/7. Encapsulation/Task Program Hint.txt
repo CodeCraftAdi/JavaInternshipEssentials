@@ -1,0 +1,89 @@
+import java.util.Scanner;
+
+class Account
+{
+    private String name;
+    private int accno;
+    private float amount;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getAccno() {
+        return accno;
+    }
+
+    public void setAccno(int accno) {
+        this.accno = accno;
+    }
+
+    public float getAmount() {
+        return amount;
+    }
+
+    public void setAmount(float amount) {
+        this.amount = amount;
+    }
+}
+class BankOperations
+{
+    void deposit(Account acc, int deposit_amt)
+    {
+        float total = acc.getAmount() + deposit_amt;
+        acc.setAmount(total);
+    }
+}
+public class BankApp
+{
+    public static void main(String[] args)
+    {
+        Scanner scanner = new Scanner(System.in);
+
+        int acc_no;
+
+        BankOperations bo = new BankOperations();
+
+        System.out.println("1. Open Account\n2. Deposit Amount\n3. Withdraw Amount\n4. Exit");
+
+        int choice = scanner.nextInt();
+
+        switch(choice)
+        {
+            case 1:
+                System.out.print("Enter Account Holder Name : ");
+                String acc_name = scanner.next();
+
+                System.out.print("Enter Account Number : ");
+                acc_no = scanner.nextInt();
+
+                System.out.print("Enter Deposited Amount : ");
+                float amount = scanner.nextFloat();
+
+                System.out.println("Account opened successfully");
+                break;
+
+            case 2:
+                System.out.print("Enter the amount you want to deposit : ");
+                float deposit_amount = scanner.nextFloat();
+
+                System.out.println("Enter account number in which you want to deposit the amount");
+                acc_no = scanner.nextInt();
+
+                Account account = new Account();
+                account.setAccno(acc_no);
+                bo.deposit();
+        }
+        Account account1 = new Account();
+        account1.setName("Deepak");
+        account1.setAccno(1111);
+        account1.setAccno(100000);
+
+
+        bo.deposit(account1, 5000);
+    }
+}

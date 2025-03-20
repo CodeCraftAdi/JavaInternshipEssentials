@@ -1,0 +1,31 @@
+Basic Interview Questions on Java Introduction 
+1. Why do we use public static void main(String[] args) in a Java program? 
+2. Can we change the method name main in a Java program? Why or why not? 
+3. What happens if we remove static from the main method? 
+4. Why does the main method take a String[] args parameter? Can we remove it? 
+5. Provide different ways how we can write the main method. 
+6. What will happen if we write main method without public access modifier? 
+7. Can we run a Java program without a main method? 
+8. What is the significance of System.out.println("Hello, World!"); in a Java program? 
+9. Can we replace System.out.println with something else to print output in Java? 
+10. What happens if we write multiple main methods in the same class?
+
+===================
+
+Interview Questions on JDK, JRE & JVM 
+28. What is the difference between JDK, JRE, and JVM? 
+29. Why is the JVM platform-independent, but Java is not? 
+30. What are the main components of the JVM? 
+31. What is Just-In-Time (JIT) compilation in JVM? How does it improve performance? 
+32. What is the role of the ClassLoader in JVM?
+
+===================
+
+Interview Questions on JVM Memory & Execution 
+33. What are the different memory areas allocated by JVM? (Heap, Stack, Method Area, etc.) 
+34. What is the difference between Heap and Stack memory in JVM? 
+35. What is the function of the Garbage Collector (GC) in JVM? 
+36. What are different types of ClassLoaders in Java? 
+37. Explain the execution process of a Java program from source code to execution in JVM.
+
+====================================================================================================

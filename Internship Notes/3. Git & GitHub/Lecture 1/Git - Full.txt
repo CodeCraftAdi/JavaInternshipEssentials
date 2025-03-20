@@ -1,0 +1,46 @@
+Git & GitHub - Version Control System (VCS)
+
+Git Commands:
+
+1. Initialize Git Repository:
+   git init  
+   - Initializes a new Git repository in the current directory.
+   - Creates a hidden .git folder to track changes.
+
+2. Check File Status:
+   git status  
+   - Shows the status of files (untracked, modified, or staged).
+   - Helps track which files are ready to be committed.
+
+3. Staging & Committing Changes:
+   git add .  
+   - Stages all modified and new files for commit.
+   - Prepares changes to be saved in the next commit.
+
+   git commit -m "message"  
+   - Saves staged changes with a commit message.
+   - Creates a snapshot of the project at that point.
+
+4. View Commit History:
+   git log  
+   - Displays the commit history with author, date, and commit hash.
+   - Useful for tracking changes over time.
+
+   git log --oneline  
+   - Shows a simplified commit history (one line per commit).
+   - Helps quickly review past commits.
+
+5. Compare Changes:
+   git diff  
+   - Shows differences between working files and the last committed version.
+   - Helps review changes before staging.
+
+   git diff --staged  
+   - Compares staged changes with the last commit.
+   - Useful for verifying modifications before committing.
+
+   git diff commit1 commit2  
+   - Compares differences between two specific commits.
+   - Helps identify changes between versions.
+
+===========================================================================================
