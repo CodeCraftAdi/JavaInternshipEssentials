@@ -1,0 +1,130 @@
+Basic Interview Questions on Java Introduction:
+
+1. Why do we use public static void main(String[] args) in a Java program?
+  - It is the standard entry point. The JVM calls this method to start program execution. 
+     public - Accessible from anywhere.
+     static - Can be invoked without creating an object.
+     void - Doesn’t return any value. Why? The JVM expects void as the return type; since int is used, the program won’t recognize it as the main method. In compilation there is No syntax error. But in execution it'll show main method not found in respective class.
+     String[] args - Allows passing command-line arguments.
+
+
+2. Can we change the method name main in a Java program? Why or why not?
+  - No. The JVM specifically looks for a method named main with the correct signature to start the program. Changing the name means the JVM won’t find the entry point.
+
+
+3. What happens if we remove static from the main method?
+  - The JVM can’t call the main method without creating an instance of the class(i.e. object), which leads to a runtime error because it expects a static method.
+
+
+4. Why does the main method take a String[] args parameter? Can we remove it?
+  - It allows you to pass command-line arguments into the program. The JVM requires this exact signature for the entry point; while you can overload main, the one with String[] args must be present.if removed execution fails with an error (Main method not found in class Test)
+  - Program :
+    public class Test {
+    public static void main(String[] args) {
+        System.out.println("Number of arguments: " + args.length);
+        for (int i = 0; i < args.length; i++) {
+            System.out.println("Argument " + i + ": " + args[i]);
+         }
+      }
+    }
+    Input: java CommandLineExample Hello Java 2025
+    Output: Number of arguments: 3
+            Argument 0: Hello
+            Argument 1: Java
+            Argument 2: 2025
+
+
+5. Provide different ways how we can write the main method.
+   - Standard: public static void main(String[] args)
+     Varargs version: public static void main(String... args)
+     Order variation: static public void main(String[] args)
+     (The order of public and static is interchangeable.)
+
+
+6. What will happen if we write main method without public access modifier?
+   - The method won’t be accessible to the JVM, and the program will fail to start, typically resulting in an error.
+
+
+7. Can we run a Java program without a main method?
+   - Not for standard applications, the main method is required as the starting point. Exceptions include applets, servlets, or test frameworks that use other mechanisms to initiate execution.
+
+
+8. What is the significance of System.out.println("Hello, World!"); in a Java program?
+   - It prints the text to the console, serving as a basic demonstration of output and verifying that the program is running correctly.
+
+
+9. Can we replace System.out.println with something else to print output in Java?
+   - Yes.
+     1. System.out.print (without a newline)
+     2. System.out.printf (formatted output)
+     3. Logging frameworks (like Log4j or java.util.logging) for more complex needs.
+
+
+10. What happens if we write multiple main methods in the same class?
+    - You can overload the main method (different parameter lists), but only the one with the signature public static void main(String[] args) will be used by the JVM as the entry point.
+
+
+
+
+
+Interview Questions on JDK, JRE & JVM:
+
+28. What is the difference between JDK, JRE, and JVM?
+    - JVM (Java Virtual Machine): Executes Java bytecode on a specific platform.
+      JRE (Java Runtime Environment): Contains the JVM and the libraries needed to run Java programs.
+      JDK (Java Development Kit): Includes the JRE plus development tools like the compiler and debugger.
+
+
+29. Why is the JVM platform-independent, but Java is not?
+    - The JVM abstracts the underlying hardware and OS, so bytecode runs the same way on any JVM. However, Java applications can include platform-specific code or libraries, which can affect portability.
+
+
+30. What are the main components of the JVM?
+    - Key components include:
+      Class Loader: Loads classes into memory.
+      Bytecode Verifier: Checks code for security and correctness.
+      Interpreter & JIT Compiler: Execute and optimize bytecode.
+      Garbage Collector: Manages memory by reclaiming unused objects.
+
+
+31. What is Just-In-Time (JIT) compilation in JVM? How does it improve performance?
+    - JIT compiles frequently executed bytecode into native machine code at runtime, reducing interpretation overhead and speeding up execution.
+
+
+32. What is the role of the ClassLoader in JVM?
+    - It dynamically loads class files into the JVM, enabling runtime linking and also providing namespace separation between classes.
+
+
+Interview Questions on JVM Memory & Execution:
+
+33. What are the different memory areas allocated by JVM? (Heap, Stack, Method Area, etc.)
+    - Main areas include:
+      1. Heap: For objects and dynamic memory allocation.
+      2. Stack: For method call frames and local variables.
+      3. Method Area: For class data (static variables, method definitions).
+      4. PC Register: Holds the address of the current instruction.
+      5. Native Method Stack: For native (non-Java) method calls.
+
+
+34. What is the difference between Heap and Stack memory in JVM?
+    - Heap: Shared among threads, used for object storage, managed by the garbage collector.
+      Stack: Thread-specific, stores method call details and local variables, follows a Last-In-First-Out (LIFO) structure.
+
+
+35. What is the function of the Garbage Collector (GC) in JVM?
+    - The GC automatically reclaims memory by removing objects that are no longer in use, helping to prevent memory leaks and optimize memory management.
+
+
+36. What are different types of ClassLoaders in Java?
+    - Common types include:
+      1. Bootstrap ClassLoader: Loads core Java classes from the JDK.
+      2. Extension (Platform) ClassLoader: Loads classes from the JRE extensions directory.
+      3. Application (System) ClassLoader: Loads classes from the application’s classpath.
+
+
+37. Explain the execution process of a Java program from source code to execution in JVM.
+    - Write Source Code: You write the program in .java files.
+      Compile: The source code is compiled by javac into bytecode (.class files).
+      Class Loading: The JVM’s ClassLoader loads the bytecode into memory.
+      Verification: The bytecode is verified for correctness and security.
+      Execution: The interpreter (and JIT compiler) converts bytecode into machine code, and the JVM executes it.

@@ -1,0 +1,199 @@
+Data Types in Java:
+
+
+11. What are the different primitive data types in Java?
+Java has 8 primitive data types:
+
+ byte (1 byte)
+ short (2 bytes)
+ int (4 bytes)
+ long (8 bytes)
+ float (4 bytes)
+ double (8 bytes)
+ char (2 bytes)
+ boolean (1 bit, stores true/false)
+
+
+
+12. What is the default value of each primitive data type in Java?
+-
+ Data Type	Default Value
+ byte	         0
+ short	         0
+ int	         0
+ long	         0L
+ float	         0.0f 
+ double	         0.0d
+ char	         '\u0000' (null character)
+ boolean         false
+
+
+
+13. What is the difference between primitive data types and reference data types?
+-
+ Primitive data types store actual values (e.g., int, char, boolean).
+ Reference data types store references (memory addresses) to objects (e.g., String, Arrays, Classes).
+
+
+
+14. Why is char in Java 2 bytes instead of 1 byte like in C/C++?
+ Java uses Unicode (UTF-16) to support multiple languages, requiring 2 bytes to store a character, unlike   C/C++ which uses ASCII (1 byte).
+
+
+
+15. What is type casting in Java? Explain implicit and explicit type casting with examples.
+Type casting converts one data type into another.
+Ans: 
+ Implicit (Widening): Smaller to larger (automatic).
+ int num = 10;
+ double d = num; // Automatic conversion (int to double)
+ 
+ Explicit (Narrowing): Larger to smaller (manual).
+ double d = 10.5;
+ int num = (int) d; // Manual conversion (double to int)
+
+
+
+16. What happens if you assign a larger data type value to a smaller data type variable?
+It causes a compilation error unless explicitly cast.
+Ans:
+ int num = 129;
+ byte b = (byte) num; // Loss of data, b = -127 (due to overflow)
+
+
+
+17. What is the difference between float and double in Java?
+Ans:
+ float (32-bit) has 7 decimal digits of precision, requires an f suffix (3.14f).
+ double (64-bit) has 15-16 decimal digits of precision, default for decimal values.
+
+
+
+18. What is the difference between == and .equals() when comparing two values?
+Ans:
+  == checks memory reference (address comparison).
+  .equals() checks actual content (value comparison).
+
+ String s1 = new String("Java");
+ String s2 = new String("Java");
+ System.out.println(s1 == s2); // false (different objects)
+ System.out.println(s1.equals(s2)); // true (same content)
+
+
+
+
+VARIABLES IN JAVA:
+
+19. What are the different types of variables in Java?
+Ans: 
+  Local Variable: Declared inside a method/block and accessible only there.
+  Instance Variable: Belongs to an object (non-static), declared inside a class but outside methods.
+  Static Variable: Shared among all objects (declared with static).
+
+
+20. What is the difference between static and non-static variables in Java?
+Ans:
+    Static variables belong to the class (shared).
+    Non-static (Instance) variables belong to individual objects.
+
+
+
+21. What happens if you use a variable (local & instance) without initializing it in Java?
+Ans: 
+    Local variables: Compilation error (must be initialized before use).
+    Instance variables: Default values are assigned (e.g., int = 0, boolean = false).
+
+    Example:1)Local varible:
+            class Test {
+            public static void main(String[] args) {
+                  int num; // Local variable (not initialized)
+                  // System.out.println(num); // ERROR: Variable 'num' might not have been initialized
+                  }
+            }
+ 
+            
+            2)Instance Varible:
+            class Example {
+               int num; // Instance variable (default value = 0)
+
+            void display() {
+               System.out.println(num); // Prints 0
+            }
+
+            public static void main(String[] args) {
+                Example obj = new Example();
+                obj.display();
+               }
+             }
+
+
+
+
+22. What is the difference between var and explicitly declared variables like int in Java?
+Ans:
+    var (introduced in Java 10) allows type inference at compile time.
+    var x = 10; // Compiler infers int
+
+
+
+
+OPERATORS IN JAVA:
+
+23. What are the different types of operators in Java?
+Ans: 
+    Arithmetic (+, -, *, /, %)
+    Relational (==, !=, >, <, >=, <=)
+    Logical (&&, ||, !)
+    Bitwise (&, |, ^, ~, <<, >>, >>>)
+    Assignment (=, +=, -=, *=, /=, %=)
+    Ternary (condition ? value1 : value2)
+    Unary (++, --, +, -)
+
+
+
+24. What is the difference between ++i and i++?
+Ans:
+    ++i (Pre-increment): Increments first, then uses the value.
+    i++ (Post-increment): Uses the value first, then increments.
+
+    Example:
+            int i = 5;
+            System.out.println(++i); // 6
+            System.out.println(i++); // 6 (then i becomes 7)
+
+
+
+25. What is the difference between && and bitwise &?
+Ans:
+    && (Logical AND): Short-circuits (skips second condition if first is false).
+    & (Bitwise AND): Checks both conditions, even if the first is false.
+
+
+
+26. What is the purpose of the ternary operator in Java? Provide an example.
+Ans: 
+    It is a shorter alternative to if-else statements.
+   
+    Example:
+            int age = 20; 
+            String result = (age >= 18) ? "Adult" : "Minor";
+            System.out.println(result); // Adult
+
+
+
+27. What is operator precedence in Java, and why is it important?
+Ans:
+
+    Precedence	Operators	            Type
+  1  ()	                                     Parentheses
+  2  ++, --, + (unary), - (unary), !, ~	     Unary
+  3  *, /, %	                             Multiplication, Division, Modulus
+  4  +, -	                             Addition, Subtraction
+  5  <<, >>, >>>	                     Bitwise Shift
+  6  <, <=, >, >=                            Relational
+  7  ==, !=	                             Equality
+  8  &	                                     Bitwise AND
+  9  ^	                                     Bitwise XOR
+ 10  &&	                                     Logical AND	
+ 11  ? :	                             Ternary
+ 12  =, +=, -=, *=, /=, %=	             Assignment
